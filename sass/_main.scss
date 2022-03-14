@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 56, 244, 0.71) 0%,
+    rgba(224, 37, 206, 0.79) 93.75%
+  );
+}
+
+.container {
+  max-width: 1400px;
+  min-height: 100%;
+  flex: 1 1 auto;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  margin: 0 0 10px 0;
+  // .content__left
+
+  &__left {
+    width: 100%;
+    min-height: 100%;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 10px;
+    padding: 10px 18px;
+    flex: 1 1 33.3333%;
+    margin: 0 6px 0 0;
+  }
+
+  // .content__right
+
+  &__right {
+    width: 100%;
+    min-height: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px 18px;
+    flex: 1 1 66.3337%;
+  }
+
+  @media (min-width: 1100px) {
+    &__left {
+        flex: 1 1 33.3333%;
+    }
+    &__right {
+        flex: 1 1 66.3337%;
+    }
+  }
+}
+
+.container-left {
+  padding: 20px;
+}
+
+.profile {
+    margin: 0 0 20px 0;
+  // .profile__row
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .profile__logo
+
+  &__logo {
+    width: 120px;
+    min-height: 120px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 30px 0 0;
+    text-align: center;
+    & img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  
+
+  // .profile__name
+
+  &__name {
+    flex: 1 1 50%;
+
+    
+  }
+
+  // .profile__sername
+
+  &__sername {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+
+    color: #cecaca;
+  }
+
+  // .profile__my-name
+
+  &__my-name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 43px;
+    letter-spacing: 0.15em;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+
+  // .profile__proffecional
+
+  &__proffecional {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    
+    color: #CECACA;
+    letter-spacing: 0.1em;
+  }
+//   @media (min-width: 950px) {
+//     &__logo {
+//       width: 200px;
+//       min-height: 200px;
+//     }
+//     &__name {
+        
+//     }
+//     &__sername {
+//         font-size: 50px;
+//         margin: 0 0 20px 0;
+//     }
+//     &__my-name {
+//         font-size: 70px;
+//         margin: 0 0 20px 0;
+
+//     }
+//     &__proffecional {
+//         font-size: 32px;
+//         padding: 0 0 0 5px;
+//     }
+// }
+}
+.contact {
+
+    // .contact__row
+
+    &__row {
+    }
+
+    // .contact__email
+    &__em {
+        background: rgba(196, 196, 196, 0.35);
+        border-radius: 10px;
+        margin: 0 0 10px 0;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        max-width: 400px;
+    }
+    &__email {
+        
+        font-size: 15px;
+        text-align: center;
+    }
+
+    // .contact__icon
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        display: inline-block;
+        margin: 0 30px 0 10px;
+        & img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+    
+    // @media (min-width: 950px) {
+    //     &__email {
+    //         font-size: 30px;
+    //         display: inline-block;
+    //         text-align: center;
+    //         vertical-align: center;
+    //     }
+    //     &__icon {
+    //         width: 60px;
+    //         height: 60px;
+            
+    //     }
+    // }
+}
+
+.contact__icon {
+    
+}
+.contact-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+}

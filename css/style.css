@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -72,3 +73,210 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 56, 244, 0.71)), color-stop(93.75%, rgba(224, 37, 206, 0.79)));
+  background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
+}
+
+.container {
+  max-width: 1400px;
+  min-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0 auto;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 10px 0;
+}
+
+.content__left {
+  width: 100%;
+  min-height: 100%;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+  padding: 10px 18px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.3333%;
+          flex: 1 1 33.3333%;
+  margin: 0 6px 0 0;
+}
+
+.content__right {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 18px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 66.3337%;
+          flex: 1 1 66.3337%;
+}
+
+@media (min-width: 1100px) {
+  .content__left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 33.3333%;
+            flex: 1 1 33.3333%;
+  }
+  .content__right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 66.3337%;
+            flex: 1 1 66.3337%;
+  }
+}
+
+.container-left {
+  padding: 20px;
+}
+
+.profile {
+  margin: 0 0 20px 0;
+}
+
+.profile__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile__logo {
+  width: 120px;
+  min-height: 120px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 30px 0 0;
+  text-align: center;
+}
+
+.profile__logo img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile__name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.profile__sername {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #cecaca;
+}
+
+.profile__my-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 43px;
+  letter-spacing: 0.15em;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+.profile__proffecional {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #CECACA;
+  letter-spacing: 0.1em;
+}
+
+.contact__em {
+  background: rgba(196, 196, 196, 0.35);
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+}
+
+.contact__email {
+  font-size: 15px;
+  text-align: center;
+}
+
+.contact__icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  margin: 0 30px 0 10px;
+}
+
+.contact__icon img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 10px;
+}
